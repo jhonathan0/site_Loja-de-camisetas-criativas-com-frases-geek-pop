@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de camisetas geek com os melhores designs de filmes, séries e jogos">
+    <title>GeekWear - Camisetas para Verdadeiros Fãs</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-tshirt logo-icon"></i>
+                    <span>Geek</span>Wear
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" class="header-icon search-icon">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="header-icon user-icon">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="header-icon cart-icon" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Vista sua paixão com nossas camisetas geek</h1>
+                <p>Designs exclusivos que celebram suas séries, filmes e jogos favoritos. Qualidade premium e conforto incomparável.</p>
+                <div class="hero-buttons">
+                    <a href="produtos.html" class="btn">Comprar Agora</a>
+                    <a href="#colecoes" class="btn btn-outline">Ver Coleções</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section class="products-section" id="colecoes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossas Coleções</h2>
+                <p>Encontre a camiseta perfeita para expressar seu amor pela cultura pop</p>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="filmes">Filmes</button>
+                <button class="filter-btn" data-filter="series">Séries</button>
+                <button class="filter-btn" data-filter="jogos">Jogos</button>
+                <button class="filter-btn" data-filter="animes">Animes</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Produto 1 -->
+                <div class="product-card" data-category="filmes">
+                    <span class="product-badge">Novidade</span>
+                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Camiseta Star Wars" class="product-img">
+                    <div class="product-info">
+                        <h3>May the Force Be With You</h3>
+                        <p>Camiseta premium com estampa de Star Wars</p>
+                        <div class="product-price">
+                            <span class="price">R$ 79,90</span>
+                            <button class="add-to-cart" data-id="1">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="product-card" data-category="series">
+                    <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Camiseta Game of Thrones" class="product-img">
+                    <div class="product-info">
+                        <h3>Winter is Coming</h3>
+                        <p>Homenagem a Game of Thrones - Casa Stark</p>
+                        <div class="product-price">
+                            <span class="old-price">R$ 89,90</span>
+                            <span class="price">R$ 69,90</span>
+                            <button class="add-to-cart" data-id="2">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 3 -->
+                <div class="product-card" data-category="jogos">
+                    <span class="product-badge">Mais Vendido</span>
+                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Camiseta Pokémon" class="product-img">
+                    <div class="product-info">
+                        <h3>Gotta Catch 'Em All</h3>
+                        <p>Estampa do Pokémon mais amado - Pikachu</p>
+                        <div class="product-price">
+                            <span class="price">R$ 74,90</span>
+                            <button class="add-to-cart" data-id="3">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 4 -->
+                <div class="product-card" data-category="filmes">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Camiseta Vingadores" class="product-img">
+                    <div class="product-info">
+                        <h3>Avengers Assemble</h3>
+                        <p>Estampa épica dos Vingadores da Marvel</p>
+                        <div class="product-price">
+                            <span class="price">R$ 89,90</span>
+                            <button class="add-to-cart" data-id="4">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 5 -->
+                <div class="product-card" data-category="animes">
+                    <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Camiseta Naruto" class="product-img">
+                    <div class="product-info">
+                        <h3>Believe It!</h3>
+                        <p>Estampa do Naruto Uzumaki em ação</p>
+                        <div class="product-price">
+                            <span class="price">R$ 69,90</span>
+                            <button class="add-to-cart" data-id="5">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 6 -->
+                <div class="product-card" data-category="jogos">
+                    <span class="product-badge">Promoção</span>
+                    <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Camiseta Minecraft" class="product-img">
+                    <div class="product-info">
+                        <h3>Creepers Attack</h3>
+                        <p>Estampa do jogo Minecraft com Creeper</p>
+                        <div class="product-price">
+                            <span class="old-price">R$ 79,90</span>
+                            <span class="price">R$ 59,90</span>
+                            <button class="add-to-cart" data-id="6">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="produtos.html" class="btn">Ver Todos os Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrinho de Compras -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>Seu Carrinho</h2>
+                <span class="close-cart" id="close-cart"><i class="fas fa-times"></i></span>
+            </div>
+            
+            <div class="cart-items" id="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+                <div class="alert">Seu carrinho está vazio</div>
+            </div>
+            
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">R$ 0,00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Frete:</span>
+                    <span id="cart-shipping">R$ 0,00</span>
+                </div>
+                <div class="summary-row summary-total">
+                    <span>Total:</span>
+                    <span id="cart-total">R$ 0,00</span>
+                </div>
+                
+                <a href="checkout.html" class="btn checkout-btn">Finalizar Compra</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GeekWear</h3>
+                    <p>Vista sua paixão com nossas camisetas geek e pop cultura. Qualidade, estilo e conforto para verdadeiros fãs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="politica-entregas.html">Política de Entrega</a></li>
+                        <li><a href="trocas-devolucoes.html">Trocas e Devoluções</a></li>
+                        <li><a href="guia-tamanhos.html">Guia de Tamanhos</a></li>
+                        <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Minha Conta</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Criar Conta</a></li>
+                        <li><a href="meus-pedidos.html">Meus Pedidos</a></li>
+                        <li><a href="lista-desejos.html">Lista de Desejos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@geekwear.com.br</li>
+                        <li><i class="fas fa-phone"></i> (11) 1234-5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo - SP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GeekWear. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
